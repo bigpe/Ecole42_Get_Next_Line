@@ -6,7 +6,7 @@
 /*   By: lrorscha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 22:06:59 by lrorscha          #+#    #+#             */
-/*   Updated: 2019/06/29 19:31:51 by lrorscha         ###   ########.fr       */
+/*   Updated: 2019/06/29 20:40:01 by lrorscha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int		ft_new_line(char **s, char **line, int fd, int ret)
 
 int		get_next_line(const int fd, char **line)
 {
-	static char	*s[255];
+	static char	*s[65535];
 	char		buf[BUFF_SIZE + 1];
 	char		*temp;
 	int			ret;
